@@ -14,7 +14,7 @@ class RestaurantController extends Controller
         $place = $request->place;
 
         $response = Http::get('https://maps.googleapis.com/maps/api/place/textsearch/json', [
-            'query' => $place,
+            'query' => 'restaurant in ' . $place,
             'key' => self::GOOGLE_MAP_API_KEY,
         ]);
 
