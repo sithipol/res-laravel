@@ -7,7 +7,7 @@
         "dev": "vite --host ",
         "build": "vite build",
         "preview": "vite preview",
-        "postinstall": "npm run prod"
+        "prod": "npm run prod"
     },
     "dependencies": {
         "@fawmi/vue-google-maps": "^0.9.79",
